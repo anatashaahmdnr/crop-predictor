@@ -56,11 +56,6 @@ def main():
         # result=predict_note_authentication(temperature,humidity,ph)
         # st.success('the output is {}'.format(result))
 
-    if st.button('about'):
-        st.text("This work is to construct a model for testing the soil fertility \nIt also suggests the crop which has to be planted depending \nupon the value obtained from the sensor. It also provides the regional \nwise information about the crop in the form of graph. \nWe have farmer chat where the farmers can share and get idea \nfrom the expert by registering in this application. \nIt also suggests the fertilizer which has to be added to the soil in \norder to increase the crop productivity. It helps the farmer to analyze the fertility of their yard and plant the better \ncrop to increase their productivity and profit. It also provides the information about the fertilizer to be \nadded in the soil and also provide the information about the nearby fertilizer shop")
-        st.text("Built by @Chaitanya Kumar@")
-        st.text("Email: chaitu.emandi@gmail.com")
-
 @st.cache
 def load_data(nrows):
     data=pd.read_csv('cpdata.csv',nrows=nrows)

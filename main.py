@@ -29,9 +29,9 @@ def main():
     activities=['Decision Tree Classification','Random Forest Classification','K-Nearest Neighbor(KNN)','Support Vector Machine(SVM)']
     option=st.sidebar.selectbox('which model would you like to use ?',activities)
     st.subheader(option)
-    temperature=st.text_input('Input your Temparature here:','Type Here')
-    humidity=st.text_input('Input your Humidity here:','Type Here')
-    ph=st.text_input('Input your Ph here:','Type Here')
+    temperature=st.text_input('Input your temperature here:','Type Here')
+    humidity=st.text_input('Input your humidity here:','Type Here')
+    ph=st.text_input('Input your PH here:','Type Here')
     inputs=[[temperature,humidity,ph]]
 
     result=""

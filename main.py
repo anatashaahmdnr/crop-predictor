@@ -19,7 +19,7 @@ classifier3=pickle.load(pickle_svm)
 
 
 def main():
-    st.title("Crop Prediction") 
+    st.title("Crop Predictor") 
     html_temp = """
     <div style="background-color:teal; padding:10px;">
     <h2 style="color:white; text-align:center;">Classification Report ML App</h2>
@@ -27,7 +27,7 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     activities=['Decision Tree Classification','Random Forest Classification','K-Nearest Neighbor(KNN)','Support Vector Machine(SVM)']
-    option=st.sidebar.selectbox('which model would you like to use ?',activities)
+    option=st.sidebar.selectbox('Pick your preferred classifier',activities)
     st.subheader(option)
     temperature=st.text_input('Input your temperature here:','Type Here')
     humidity=st.text_input('Input your humidity here:','Type Here')
